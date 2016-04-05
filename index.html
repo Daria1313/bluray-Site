@@ -8,16 +8,18 @@
 <link rel="stylesheet" href="css/normalize.css" />
 <link rel="stylesheet" href="css/foundation.css" />
  <link rel="stylesheet" type="text/css" href="css/component.css" />
+<link href="css/meyerReset.css" rel="stylesheet" type="text/css" media="screen">
+<link href="css/SLIDER.css" rel="stylesheet" type="text/css" media="screen">
 <script src="js/vendor/modernizr.js"></script>
 </head>
 <body>
-<style>
+<style scoped>
 
  body {
 	 background-image: url(images/back.jpg);
 	 background-color:#000;
 	 background-size: cover;
-  
+	 background-position:0px 0px;
 	 background-repeat:no-repeat;
 	 color:#fff;
  }
@@ -43,79 +45,48 @@
 </div>
  <!--yuan code-->
  
- <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
-<ul class="orbit-container">
-<button class="orbit-previous" aria-label="previous"><span class="show-for-sr">Previous Slide</span>&#9664;</button>
-<button class="orbit-next" aria-label="next"><span class="show-for-sr">Next Slide</span>&#9654;</button>
-<li class="orbit-slide is-active">
-<img src="http://placehold.it/2000x750" alt="slider1">
-</li>
-<li class="orbit-slide">
-<img src="http://placehold.it/2000x750" alt="slider2">
-</li>
-<li class="orbit-slide">
-<img src="http://placehold.it/2000x750" alt="slider3">
-</li>
-<li class="orbit-slide">
-<img src="http://placehold.it/2000x750" alt="slider4">
-</li>
-</ul>
-</div>
+ <!--slider-->
  
- 
-<div class="fill row">
-<h2 class="hide">We want to know your name</h2>
-
-	<div class="small-12 medium-5 medium-centered large-4 large-centered columns">
-    <img src="images/logo.png" alt="logo">
-    </div>
-</div>
-
-<div class="large-12 large-centered columns screen">
-
-<div class="gallery row">
+     <div id="mainContainer">
+     
+<h2 class="hide">Desc</h2>
+    <p id="title">Check Out new releases for the movies. Now available in HD.</p>
+    <section id="imageContainer">
+    
 <h2 class="hide">Gallery of movies</h2>
+    	<div id="houseImages"> <!-- add in all of the images to make a scrolling "banner" -->
+    		<img class="img" src="images/revenant_banner.jpg" alt="revenant"/><img src="images/taken3_banner.jpg" alt="taken3"/><img src="images/batman_banner.jpg" alt="batmanVSsuperman"/><img src="images/findingDory_banner.jpg" alt="finding Dory"/><img src="images/finesthours_banner.jpg" alt="Finest hours"/><img src="images/rideAlong2_banner.jpg" alt="ride Along 2"/>
+        </div>
+    </section>
+    
+    <nav id="bottomNav">
+    	<ul id="navList">
+            <li><div id="thumb1" class="sigilContainer revenant" data-offset="0"></div></li>
+            <li><div id="thumb2" class="sigilContainer taken" data-offset="1"></div></li>
+            <li><div id="thumb3" class="sigilContainer batman" data-offset="2"></div></li>
+            <li><div id="thumb4" class="sigilContainer tully" data-offset="3"></div></li>
+            <li><div id="thumb5" class="sigilContainer greyjoy" data-offset="4"></div></li>
+            <li><div id="thumb6"class="sigilContainer arryn" data-offset="5"></div></li>
+        </ul>
+    </nav>
+    
+    <div class="small-12 medium-12 large-12 columns">
+     <div  class="row collapse" id="textBox">
+			<div   class="small-12 medium-12 large-12 columns" id="titleBox">
+				<h2 id="title"></h2>
+			</div>
+            
+			<div class="small-10 small-centered medium-10 large-8 columns" id="contentBox">
+				<p id="description"></p>
+			</div>
+    </div>
+   </div>
+    
+    
+<p class="brought">Brought to you by movie pros.</p>
 
-	<div class="movie small-12 medium-4 large-3 columns">
-    	<div class="like">
-        <span class="heart"><img src="images/heart.png" id="Guardians_of_Galaxy" alt="Guardians_of_Galaxy"></span>
-    	<img class="poster" src="images/Guardians_of_Galaxy.jpg" alt="Guardians of Galaxy">
-        </div>
-        <h3>Guardians of Galaxy</h3>
-        <p>After stealing a mysterious orb in the far reaches of outer space, Peter Quill is now the main target of a manhunt led by the villain known as Ronan the Accuser. To help fight Ronan and his team and save the galaxy from his power, Quill creates a team known as the 'Guardians of the Galaxy' to save the world.</p>
-        
-    </div>
-    
-    <div class="movie small-12 medium-4 large-3 columns">
-   		<div class="like ">
-        <span class="heart"><img src="images/heart.png" id="1408" alt="1408"></span>
-    	<img class="poster" src="images/1408.jpg" alt="1408">
-        </div>
-        <h3>1408</h3>
-        <p>The cynical and skeptical writer Mike Enslin writes books evaluating supernatural phenomena in hotels, graveyards and other haunted places. While writing his latest book, he decided to spend one night in THE DOLPHIN HOTEL'S evil room 1408, which is permanently unavailable for guests.</p>
-    </div>
-    
-    <div class="movie small-12 medium-4 large-3 columns">
-    	<div class="like ">
-        <span class="heart"><img src="images/heart.png" id="Despicable_Me" alt="Despicable_Me"></span>
-    	<img src="images/despicable_Me.jpg" alt="Despicable_Me">
-        </div>
-        <h3>Despicable Me</h3>
-        <p>Surrounded by a small army of minions, Gru is planning the biggest heist in the history of the world: stealing the moon. But everything goes good until he decides to adopt three little girls for the plan. The world's greatest villain has just met his greatest challenge: three little girls named Margo, Edith and Agnes.</p>
-    </div>
-    
-    <div class="movie small-12 medium-4 large-3 columns">
-    	<div class="like ">
-        <span class="heart"><img src="images/heart.png" id="Gatsby" alt="Gatsby"></span>
-    	<img src="images/Gatsby.jpg" alt="Great Gatsby">
-        </div>
-        <h3>Great Gatsby</h3>
-        <p>Midwesterner Nick Carraway is lured into the lavish world of his neighbor, Jay Gatsby. Soon enough, however, Carraway will see through the cracks of Gatsby's nouveau riche existence, where obsession, madness, and tragedy await.</p>
-    </div>
-    
-   
-    </div>
 </div>
+
 
 
 
@@ -131,6 +102,7 @@
     <script src="js/EasePack.min.js"></script>
     <script src="js/rAF.js"></script>
   <script src="js/demo-3.js"></script>
+<script src="js/slider.js"></script>
   
 </body>
 </html>
