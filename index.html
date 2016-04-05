@@ -1,15 +1,107 @@
 <!doctype html>
-<html>
+<html lang="en" class="no-js">
 <head>
 <meta charset="utf-8">
-<title>first web page</title>
-<link href="css/reset.css" rel="stylesheet" type="text/css"media="screen">
-<link href="css/main.css" rel="stylesheet" type="text/css"media="screen">
-
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<title>Main</title>
+<link rel="stylesheet" href="css/main.css" type="text/css">
+<link rel="stylesheet" href="css/normalize.css" />
+<link rel="stylesheet" href="css/foundation.css" />
+ <link rel="stylesheet" type="text/css" href="css/component.css" />
+<link href="css/meyerReset.css" rel="stylesheet" type="text/css" media="screen">
+<link href="css/SLIDER.css" rel="stylesheet" type="text/css" media="screen">
+<script src="js/vendor/modernizr.js"></script>
 </head>
-
 <body>
-<script src="js/main.js"></script>
+<style scoped>
 
+ body {
+	 background-image: url(images/back.jpg);
+	 background-color:#000;
+	 background-size: cover;
+	 background-position:0px 0px;
+	 background-repeat:no-repeat;
+ }
+ h3
+ {
+	 font-family: "Palatino Lynotype";
+	font-size:22px;
+	color: #E1CB89;
+ }
+ </style>
+<!--yuan code-->
+
+<div class="small-12  medium-12 large-12 columns" id="welcome">
+
+ 	<div class="container demo-3">
+			<div class="content">
+                <div id="large-header" class="large-header">
+                    <canvas id="demo-canvas"></canvas>
+                    <h1 class="main-title"><span>welcome</span></h1>
+                </div>
+            </div>
+   </div>
+</div>
+ <!--yuan code-->
+ 
+ <!--slider-->
+ 
+     <div id="mainContainer">
+     
+<h2 class="hide">Desc</h2>
+    <p id="title">Check Out new releases for the movies. Now available in HD.</p>
+    <section id="imageContainer">
+    
+<h2 class="hide">Gallery of movies</h2>
+    	<div id="houseImages"> <!-- add in all of the images to make a scrolling "banner" -->
+    		<img class="img" src="images/revenant_banner.jpg" alt="revenant"/><img src="images/taken3_banner.jpg" alt="taken3"/><img src="images/batman_banner.jpg" alt="batmanVSsuperman"/><img src="images/findingDory_banner.jpg" alt="finding Dory"/><img src="images/finesthours_banner.jpg" alt="Finest hours"/><img src="images/rideAlong2_banner.jpg" alt="ride Along 2"/>
+        </div>
+    </section>
+    
+    <nav id="bottomNav">
+    	<ul id="navList">
+            <li><div id="thumb1" class="sigilContainer revenant" data-offset="0"></div></li>
+            <li><div id="thumb2" class="sigilContainer taken" data-offset="1"></div></li>
+            <li><div id="thumb3" class="sigilContainer batman" data-offset="2"></div></li>
+            <li><div id="thumb4" class="sigilContainer tully" data-offset="3"></div></li>
+            <li><div id="thumb5" class="sigilContainer greyjoy" data-offset="4"></div></li>
+            <li><div id="thumb6"class="sigilContainer arryn" data-offset="5"></div></li>
+        </ul>
+    </nav>
+    
+    <div class="small-12 medium-12 large-12 columns">
+     <div  class="row collapse" id="textBox">
+			<div   class="small-12 medium-12 large-12 columns" id="titleBox">
+				<h2 id="title"></h2>
+			</div>
+            
+			<div class="small-10 small-centered medium-10 large-8 columns" id="contentBox">
+				<p id="description"></p>
+			</div>
+    </div>
+   </div>
+    
+    
+<p class="brought">Brought to you by movie pros.</p>
+
+</div>
+
+
+
+
+
+    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      $(document).foundation()
+    </script>
+    <script src="js/TweenLite.min.js"></script>
+    <script src="js/EasePack.min.js"></script>
+    <script src="js/rAF.js"></script>
+  <script src="js/demo-3.js"></script>
+<script src="js/slider.js"></script>
+  
 </body>
 </html>

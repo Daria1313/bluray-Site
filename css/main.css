@@ -64,11 +64,24 @@
 	font-family: "Arial", "Lucida Grande", sans-serif;
 	font-size:30px;
 	margin-bottom:2%;
+	margin-top:70px;
 }
 
 .brought {
-	margin-top:10%;
+	margin-top:20%;
 	font-size:12px;
 	margin-bottom:10px;
 	
 }
+
+#bottomNav
+{
+  margin-bottom:3%;	
+}
+
+#textBox h2, p
+{
+  color:#fff;
+	
+}
+
