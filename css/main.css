@@ -19,36 +19,15 @@
 {
 	font-family:"Comic Sans MS";
 	font-size:34px;
-	color: #E1CB89;
 }
 
-#submit
-{
-	background-color:#E1CB89;
-	padding:20% 40%;
-	border:1px white solid;
-}
-
-#submit:hover
-{
-	background-color:#370A0F;
-	color:#E1CB89;
-}
-
-.movie{
-	height:700px;
-	padding-top:1%;
-	background-color: #000;
+ p, h3, h2
+ {
+	 color:white; !important
  }
  
- .screen
- {
-	 background-color: #370A0F;
-	 padding:3%;
- }
- p
- {
-	 color:white;
+ h3 {
+	font-size:20px;
  }
  
 .like:hover {
@@ -81,3 +60,15 @@
 }
 
 
+#title{
+	font-family: "Arial", "Lucida Grande", sans-serif;
+	font-size:30px;
+	margin-bottom:2%;
+}
+
+.brought {
+	margin-top:10%;
+	font-size:12px;
+	margin-bottom:10px;
+	
+}
